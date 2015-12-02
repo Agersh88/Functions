@@ -14,6 +14,11 @@ void forgeABlueSquare(){
   rectMode(CENTER);
   rect(width/2,height/2,50,50);
 }
+
+
+void craftA2DimensionalSphere(){
+  //ellipse(mouseX,mouseY,diam,diam);
+}
   
   
   
