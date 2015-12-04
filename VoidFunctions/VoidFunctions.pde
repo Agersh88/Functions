@@ -1,3 +1,4 @@
+
 void setup() {
   size(800, 600);
   noStroke();
@@ -7,7 +8,7 @@ void setup() {
 void draw() {
   background(0);
   forgeABlueSquare(50);
-  craftA2DimensionalSphere();
+  craftA2DimensionalSphere(30,255,0,0);
 }
 
 //blue square code
@@ -18,9 +19,8 @@ void forgeABlueSquare(float sz) {
 }
 
 //circle code
-void craftA2DimensionalSphere() {
-  float diam;
+void craftA2DimensionalSphere(float diam, float red, float green, float blue) {
+  fill(red,green,blue);
   noCursor();
-  diam = 30;
   ellipse(mouseX, mouseY, diam, diam);
 }
