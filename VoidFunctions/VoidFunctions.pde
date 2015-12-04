@@ -1,24 +1,26 @@
-void setup(){
-  size(800,600);
+void setup() {
+  size(800, 600);
   noStroke();
 }
 
 
-void draw(){
-  forgeABlueSquare();
+void draw() {
+  background(0);
+  forgeABlueSquare(50);
+  craftA2DimensionalSphere();
 }
 
-
-void forgeABlueSquare(){
-  fill(0,0,random(255));
+//blue square code
+void forgeABlueSquare(float sz) {
+  fill(0, 150, 255);
   rectMode(CENTER);
-  rect(width/2,height/2,50,50);
+  rect(width/2, height/2, sz, sz);
 }
 
-
-void craftA2DimensionalSphere(){
-  //ellipse(mouseX,mouseY,diam,diam);
+//circle code
+void craftA2DimensionalSphere() {
+  float diam;
+  noCursor();
+  diam = 30;
+  ellipse(mouseX, mouseY, diam, diam);
 }
-  
-  
-  
